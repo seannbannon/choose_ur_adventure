@@ -14,7 +14,8 @@ def pickWeapon():
         print("Oh right! You fight with a", weaponChoice, "!")
     else:
         print("Sorry, I didn't catch that, what is your weapon again?")
-        weaponChoice()
+        print("")
+        pickWeapon()
 
 
 start()
