@@ -21,7 +21,16 @@ def pickWeapon():
 
 def hearNoise():
     print("")
-    noiseChoice = input("You get your mind in order, put your " + weaponChoice + " on your belt and ")
+    noiseChoice = input("You get your mind in order, put your " + weaponChoice + " on your belt and brush the dust off your cap. As you stand up you hear a rustling in the bushes behind you. Do you want to investigate it or run away?(investigate/run)")
+    if noiseChoice == "investigate":
+        print("")
+        print("You go peer behind the bushes and find a small baby gnome wrapped in a red blanket. He looks up at you and giggles. Cute little defenseless fella. Can't be safe around here for him. Should you take him with you or leave him behind?")
+    elif noiseChoice =="run":
+        print("Your cowardice has gotten the best of you. You turn in the opposite direction and run into the darkness toward a small firelight you see off in the distance.")
+    else:
+        print("Sorry, I didn't catch that, what is your answer again?")
+        print("")
+        hearNoise()
 
 
 start()
