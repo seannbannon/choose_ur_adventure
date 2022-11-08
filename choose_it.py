@@ -7,6 +7,7 @@ def start():
     pickWeapon()
 
 def pickWeapon():
+    global weaponChoice
     print("")
     weaponChoice = input("You have fallen through the purple swiriling wormhole of Avalon and have found yourself back in the Babylon Jungle. Home to some of the most deadly creatures on the planet. As you dust yourself off from your abrupt wormhole suck and begin to get your bearings you pick up your weapon. What was your weapon, again? (sword, shield, magic wand)")
     if weaponChoice == "sword" or weaponChoice == "shield" or weaponChoice == "magic wand":
@@ -16,6 +17,11 @@ def pickWeapon():
         print("Sorry, I didn't catch that, what is your weapon again?")
         print("")
         pickWeapon()
+    hearNoise()
+
+def hearNoise():
+    print("")
+    noiseChoice = input("You get your mind in order, put your " + weaponChoice + " on your belt and ")
 
 
 start()
