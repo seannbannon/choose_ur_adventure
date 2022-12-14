@@ -44,7 +44,7 @@ def gnome():
 
 def firelight():
     print("")
-    fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you cause a distraction and possibly save the child or sneak away?(distract/sneak away)")
+    fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and you see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you cause a distraction and possibly save the child or sneak away?(distract/sneak away)")
     if fireChoice == "distract":
         print("")
         print
@@ -54,5 +54,3 @@ def firelight():
 
 
 start()
-
-
