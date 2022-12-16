@@ -56,7 +56,15 @@ def firelight():
         if gnomeChoice == "take him":
             print("")
             print("You tighten the baby gnome on your back and take out your " + weaponChoice  +" You jump on top of one of the stumps around the fire and swing your " + weaponChoice + " at one of the big guys nearby." )
-
+            if weaponChoice == "sword":
+                print("")
+                print("You manage to slice the cheek of one of the largest elves. He is unphased and pissed off. He leaps at you- blood flooding from his sunken face- and you thrust your sword deep into his thigh. He goes down and lets out a mighty yell. Everyone freezes. Clearly they have a mighty warrior before them. They wait for you to speak.")
+            if weaponChoice == "magic wand":
+                print("")
+                print("A bolt of lightening flies fro your want- strinking the elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
+            if weaponChoice == "shield":
+                print("")
+                
 
 
 
