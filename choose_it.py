@@ -84,7 +84,10 @@ def quicksand():
     quicksandChoice = input("As you sneak past the fire- you step into what seems to be very thick mud. You trudge ahead but find yourself hopelessly sinking deeper into the mud. Wait a minute. This isn't regular mud. This is quicksand! Before you realize it you are up to your waist. You reach for a nearby branch but it is just out of reach. Your only hope is to yell for help and hope that the people around the fire hear you and help you. But they are clearly savages. Do you yell for help or accept your inevitable fate to suffocate in the sand? (yell/die)")
     if quicksandChoice == "yell":
         print("")
+        print("You scream for help over and over. You truly are a coward. You can hear the savages getting closer to you. Next thing you know you are up to your neck in quicksand and the savages finally arrive. Oh thank goodness. You plead for them to help you out of the quicksand. You say something about how much you hate babies and love buring them alive. They speak in some kind of caveman sounding tongue. The begin to pick up large stones and one after another begin throwing them at your cranium. You regret your decision to yell. They kill you. Your body slowly sinks into the quicksand, where it stays for the next 27 million years. You are dead.")
+    if quicksandChoice == "die":
         print("")
+        print("You accept your fate. You hear the birds chirping in the trees. You see the sun setting off in the distance. The sky an orange-pink. You see how fortunate you were to have been alive at all. After a couple of minutes you're up to your neck in quicksand. You feel how good it is to just take a deep breath. Your mouth and nose go under the quicksand. You try to breathe but just feel a heaviness. Everything goes black. The next thing you know you awaken next to your spouse of 27 years. You grab her and kiss her cheek. You go downstairs to heat up a pot of tea.")
 
 
 def speech():
@@ -92,6 +95,6 @@ def speech():
     speechChoice = input("You jump up on a nearby wooden table and prepare for you speech. You're unsure if you should try to convince them of the error of their ways or if you should trick them and make them think you are on their side? (convince/trick)")
     if speechChoice == "convince":
         print("")
-        print("You begin by addressing the crowd and telling them how sacred life it. How they ")
+        print("You begin by addressing the crowd and telling them how sacred life it. How they are acting barbarically and how there is no possible way that ")
 
 start()
