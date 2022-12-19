@@ -50,8 +50,8 @@ def gnome():
 
 def firelight():
     print("")
-    fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and you see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you cause a distraction and possibly save the child or sneak away?(distract/sneak away)")
-    if fireChoice == "distract":
+    fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and you see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you try to save the child or sneak away?(save/sneak away)")
+    if fireChoice == "save":
         print("")
         if gnomeChoice == "take him":
             print("")
@@ -61,10 +61,13 @@ def firelight():
                 print("You manage to slice the cheek of one of the largest elves. He is unphased and pissed off. He leaps at you- blood flooding from his sunken face- and you thrust your sword deep into his thigh. He goes down and lets out a mighty yell. Everyone freezes. Clearly they have a mighty warrior before them. They wait for you to speak.")
             if weaponChoice == "magic wand":
                 print("")
-                print("A bolt of lightening flies fro your want- strinking the elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
+                print("A bolt of lightening flies from your wand- strinking the elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
             if weaponChoice == "shield":
                 print("")
-                
+                print("You smash the face of the largest elf. He falls backwards into the fire. Another one charges you from behind, knocking you down. He jumps on top of you, but you manage to push him off with your shield. You scuffle up to your feet and thrust the bottom of the shield into the elf's throat. Decapitating him. Everyone halts and stares at you. They wait for you to say something.")
+        if gnomeChoice == "leave him":
+            print("")
+            print("This must be why that baby gnome was in the bushes. Someone hid it there to avoid it being used as a human sacrifice.")
 
 
 
