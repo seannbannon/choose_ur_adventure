@@ -47,6 +47,10 @@ def gnome():
         print("")
         print("You decided to leave the gnome. You can't find your way out of here while worrying about a baby gnome. Besides, I'm sure his mother will be back for him in a moment. Like a deer. As you turn around you see a campfire off in the distance. You find yourself absolutely mezmerized by it. You head towards the fire.")
         firelight()
+    else:
+        print("Sorry, I didn't catch that, what is your answer again?")
+        print("")
+        gnome()
 
 def firelight():
     print("")
@@ -65,6 +69,10 @@ def firelight():
         print("")
         print("You decide it would probably be best to let sleeping dogs lie. You pull up your hood and creep through the shadows to avoid detection. You feel bad for leaving that child to die, and you should. However, it's not up to you to save the world. You aren't entirely sure how you even got here and you're focused on making it back home in one piece. You are a coward, though, and def do not have what it takes to be a great adventurer.")
         quicksand()
+    else:
+        print("Sorry, I didn't catch that, what is your answer again?")
+        print("")
+        firelight()
 
 def battlescene():
     print("")
@@ -85,9 +93,17 @@ def quicksand():
     if quicksandChoice == "yell":
         print("")
         print("You scream for help over and over. You truly are a coward. You can hear the savages getting closer to you. Next thing you know you are up to your neck in quicksand and the savages finally arrive. Oh thank goodness. You plead for them to help you out of the quicksand. You say something about how much you hate babies and love buring them alive. They speak in some kind of caveman sounding tongue. The begin to pick up large stones and one after another begin throwing them at your cranium. You regret your decision to yell. They kill you. Your body slowly sinks into the quicksand, where it stays for the next 27 million years. You are dead.")
+        if gnomeChoice == "take him":
+            print("")
+            print("The baby gnome on your back died too. Way to go.")
     if quicksandChoice == "die":
         print("")
         print("You accept your fate. You hear the birds chirping in the trees. You see the sun setting off in the distance. The sky an orange-pink. You see how fortunate you were to have been alive at all. After a couple of minutes you're up to your neck in quicksand. You feel how good it is to just take a deep breath. Your mouth and nose go under the quicksand. You try to breathe but just feel a heaviness. Everything goes black. The next thing you know you awaken next to your spouse of 27 years. You grab her and kiss her cheek. You go downstairs to heat up a pot of tea.")
+    else:
+        print("Sorry, I didn't catch that, what is your answer again?")
+        print("")
+        quicksand()
+
 
 
 def speech():
