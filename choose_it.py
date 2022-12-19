@@ -48,20 +48,6 @@ def gnome():
         print("You decided to leave the gnome. You can't find your way out of here while worrying about a baby gnome. Besides, I'm sure his mother will be back for him in a moment. Like a deer. As you turn around you see a campfire off in the distance. You find yourself absolutely mezmerized by it. You head towards the fire.")
         firelight()
 
-
-def battlescene():
-    print("")
-    print("You jump on top of one of the stumps around the fire and swing your " + weaponChoice + " at one of the big guys nearby.")
-    if weaponChoice == "sword":
-        print("")
-        print("You manage to slice the cheek of one of the largest elves. He is unphased and pissed off. He leaps at you- blood flooding from his sunken face- and you thrust your sword deep into his thigh. He goes down and lets out a mighty yell. Everyone freezes. Clearly they have a mighty warrior before them. They wait for you to speak.")
-    if weaponChoice == "magic wand":
-        print("")
-        print("A bolt of lightening flies from your wand- strinking the boss elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
-    if weaponChoice == "shield":
-        print("")
-        print("You smash the face of the largest elf. He falls backwards into the fire. Another one charges you from behind, knocking you down. He jumps on top of you, but you manage to push him off with your shield. You scuffle up to your feet and thrust the bottom of the shield into the elf's throat. Decapitating him. Everyone halts and stares at you. They wait for you to say something.")
-
 def firelight():
     print("")
     fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and you see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you try to save the child or sneak away?(save/sneak away)")
@@ -77,7 +63,35 @@ def firelight():
             battlescene()
     if fireChoice == "sneak away":
         print("")
-        print("You decide it would probably be best to let sleeping dogs lie. You pull up your hood and creep through the shadows to avoid detection. You feel bad for leaving that child to die, and you should. However, it's not up to you to save the world. You aren't entirely sure how you even got here and you're focused on making it back home in one piece. You are a coward, though, and def do not have what it takes to be a great adventurer. ")
+        print("You decide it would probably be best to let sleeping dogs lie. You pull up your hood and creep through the shadows to avoid detection. You feel bad for leaving that child to die, and you should. However, it's not up to you to save the world. You aren't entirely sure how you even got here and you're focused on making it back home in one piece. You are a coward, though, and def do not have what it takes to be a great adventurer.")
+        quicksand()
 
+def battlescene():
+    print("")
+    print("You jump on top of one of the stumps around the fire and swing your " + weaponChoice + " at one of the big guys nearby.")
+    if weaponChoice == "sword":
+        print("")
+        print("You manage to slice the cheek of one of the largest elves. He is unphased and pissed off. He leaps at you- blood flooding from his sunken face- and you thrust your sword deep into his thigh. He goes down and lets out a mighty yell. Everyone freezes. Clearly they have a mighty warrior before them. They wait for you to speak.")
+    if weaponChoice == "magic wand":
+        print("")
+        print("A bolt of lightening flies from your wand- strinking the boss elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
+    if weaponChoice == "shield":
+        print("")
+        print("You smash the face of the largest elf. He falls backwards into the fire. Another one charges you from behind, knocking you down. He jumps on top of you, but you manage to push him off with your shield. You scuffle up to your feet and thrust the bottom of the shield into the elf's throat. Decapitating him. Everyone halts and stares at you. They wait for you to say something.")
+
+def quicksand():
+    print("")
+    quicksandChoice = input("As you sneak past the fire- you step into what seems to be very thick mud. You trudge ahead but find yourself hopelessly sinking deeper into the mud. Wait a minute. This isn't regular mud. This is quicksand! Before you realize it you are up to your waist. You reach for a nearby branch but it is just out of reach. Your only hope is to yell for help and hope that the people around the fire hear you and help you. But they are clearly savages. Do you yell for help or accept your inevitable fate to suffocate in the sand? (yell/die)")
+    if quicksandChoice == "yell":
+        print("")
+        print("")
+
+
+def speech():
+    print("")
+    speechChoice = input("You jump up on a nearby wooden table and prepare for you speech. You're unsure if you should try to convince them of the error of their ways or if you should trick them and make them think you are on their side? (convince/trick)")
+    if speechChoice == "convince":
+        print("")
+        print("You begin by addressing the crowd and telling them how sacred life it. How they ")
 
 start()
