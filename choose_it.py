@@ -61,10 +61,12 @@ def firelight():
             print("")
             print("You tighten the baby gnome on your back and take out your " + weaponChoice + ".")
             battlescene()
+            speech()
         if gnomeChoice == "leave him":
             print("")
             print("This must be why that baby gnome was in the bushes. Someone hid it there to avoid it being used as a human sacrifice.")
             battlescene()
+            speech()
     if fireChoice == "sneak away":
         print("")
         print("You decide it would probably be best to let sleeping dogs lie. You pull up your hood and creep through the shadows to avoid detection. You feel bad for leaving that child to die, and you should. However, it's not up to you to save the world. You aren't entirely sure how you even got here and you're focused on making it back home in one piece. You are a coward, though, and def do not have what it takes to be a great adventurer.")
@@ -96,14 +98,17 @@ def quicksand():
         if gnomeChoice == "take him":
             print("")
             print("The baby gnome on your back died too. Way to go.")
+            dead()
+        else:
+            dead()
     if quicksandChoice == "die":
         print("")
         print("You accept your fate. You hear the birds chirping in the trees. You see the sun setting off in the distance. The sky an orange-pink. You see how fortunate you were to have been alive at all. After a couple of minutes you're up to your neck in quicksand. You feel how good it is to just take a deep breath. Your mouth and nose go under the quicksand. You try to breathe but just feel a heaviness. Everything goes black. The next thing you know you awaken next to your spouse of 27 years. You grab her and kiss her cheek. You go downstairs to heat up a pot of tea.")
+        dead()
     else:
         print("Sorry, I didn't catch that, what is your answer again?")
         print("")
         quicksand()
-
 
 
 def speech():
@@ -112,5 +117,19 @@ def speech():
     if speechChoice == "convince":
         print("")
         print("You begin by addressing the crowd and telling them how sacred life it. How they are acting barbarically and how there is no possible way that ")
+
+
+
+def dead():
+    print("")
+    deadChoice = input("Do you want to play again?(yes/no)")
+    if deadChoice == "yes":
+        start()
+    if deadChoice == "no":
+        print("Thanks for playing :)")
+        quit()
+        
+
+
 
 start()
