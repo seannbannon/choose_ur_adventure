@@ -20,6 +20,7 @@ def pickWeapon():
     hearNoise()
 
 def hearNoise():
+    global noiseChoice
     print("")
     noiseChoice = input("You get your mind in order, put your " + weaponChoice + " on your belt and brush the dust off your cap. As you stand up you hear a rustling in the bushes behind you. Do you want to investigate it or run away?(investigate/run)")
     if noiseChoice == "investigate":
@@ -37,7 +38,6 @@ def hearNoise():
 
 def gnome():
     global gnomeChoice
-    print("")
     gnomeChoice = input("You go peer behind the bushes and find a small baby gnome wrapped in a red blanket. He looks up at you and giggles. Cute little defenseless fella. Can't be safe around here for him. Should you take him with you or leave him behind? (take him/ leave him)")
     if gnomeChoice == "take him":
         print("")
@@ -57,6 +57,10 @@ def firelight():
     fireChoice = input("As you get close to the firelight, something seems strange. The fire begins to burst into different colored light, and you see figures around the fire chanting something in a strange tongue you've never heard before. They begin to beat a large drum and you can see them carrying out what seems to be a sacrifice. They begin to tie what looks like a young child above the fire. Should you try to save the child or sneak away?(save/sneak away)")
     if fireChoice == "save":
         print("")
+        if noiseChoice == "run":
+            print("")
+            battlescene()
+            speech()
         if gnomeChoice == "take him":
             print("")
             print("You tighten the baby gnome on your back and take out your " + weaponChoice + ".")
@@ -84,7 +88,7 @@ def battlescene():
         print("You manage to slice the cheek of one of the largest elves. He is unphased and pissed off. He leaps at you- blood flooding from his sunken face- and you thrust your sword deep into his thigh. He goes down and lets out a mighty yell. Everyone freezes. Clearly they have a mighty warrior before them. They wait for you to speak.")
     if weaponChoice == "magic wand":
         print("")
-        print("A bolt of lightening flies from your wand- strinking the boss elf between the eyes. He does down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
+        print("A bolt of lightening flies from your wand- striking the boss elf between the eyes. He goes down hard. Everyone freezes. They have't seen a wizard in over 400 years. They wait for you to to speak.")
     if weaponChoice == "shield":
         print("")
         print("You smash the face of the largest elf. He falls backwards into the fire. Another one charges you from behind, knocking you down. He jumps on top of you, but you manage to push him off with your shield. You scuffle up to your feet and thrust the bottom of the shield into the elf's throat. Decapitating him. Everyone halts and stares at you. They wait for you to say something.")
@@ -113,10 +117,11 @@ def quicksand():
 
 def speech():
     print("")
-    speechChoice = input("You jump up on a nearby wooden table and prepare for you speech. You're unsure if you should try to convince them of the error of their ways or if you should trick them and make them think you are on their side? (convince/trick)")
+    speechChoice = input("You jump up on a nearby wooden table and prepare for your speech. You're unsure if you should try to convince them of the error of their ways or if you should trick them and make them think you are on their side? (convince/trick)")
     if speechChoice == "convince":
         print("")
-        print("You begin by addressing the crowd and telling them how sacred life it. How they are acting barbarically and how there is no possible way that ")
+        print("You begin by addressing the crowd and telling them how sacred life it. How they are acting barbarically and how there is no possible way that the good Lord above would approve of their sacrifices. You hear a quick scuffling off to your right and you see an archer crouched down with his bow drawn back. Unfortunately you see him too late and the archer releases the arrow and goes through the center of your skull. You have died. Never insult another person's God. ")
+        dead()
 
 
 
