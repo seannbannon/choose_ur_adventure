@@ -108,11 +108,21 @@ def quicksand():
     if quicksandChoice == "die":
         print("")
         print("You accept your fate. You hear the birds chirping in the trees. You see the sun setting off in the distance. The sky an orange-pink. You see how fortunate you were to have been alive at all. After a couple of minutes you're up to your neck in quicksand. You feel how good it is to just take a deep breath. Your mouth and nose go under the quicksand. You try to breathe but just feel a heaviness. Everything goes black. The next thing you know you awaken next to your spouse of 27 years. You grab her and kiss her cheek. You go downstairs to heat up a pot of tea.")
-        dead()
+        tea()
     else:
         print("Sorry, I didn't catch that, what is your answer again?")
         print("")
         quicksand()
+
+def tea():
+    print("")
+    teaChoice = input("What kind of tea do you want? (green/black)")
+    if teaChoice == "green" or teaChoice == "black":
+            print("")
+            print("Nice choice!!")
+    else:
+        print("")
+        print("You don't have that kind of tea!")
 
 
 def speech():
@@ -124,7 +134,7 @@ def speech():
         dead()
     if speechChoice == "trick":
         print("")
-        print("You stand strong. You tell the attendants that you were actually a direct incarnation of their God. You are pleased that they have decided to sacrifice this fine young child to you. You have a request, however. You need them to sacrifice the child at a better location. You need them to sacrifice the child at the nearest town. The one with the portal (which you can take home). The attendees seem perflexed. What difference does it make where the child is sacrificed? You assure them that if we can move the sacrifice to the town, then they will each get a wish of their choosing. The idiots actually believe it! You lead a march toward the town with a posse of 20 behind you. Complete with a small child tied to a cross. What is your game plan? How are you going to save yourself and this kid? You arrive in the town and convince the crowd that they need not do all the work of making a large fire and having to life up the child and wait for him to burn.. then you've got to deal with the smell. Anyway- you need not do this- I will just take the sacrifice with me and the people agree. You go into the house with the portal and jump inside and wind up in the depths of hell. This was not the right portal. You burn for eternity in hell. Dang. You were so close. You are dead. ")
+        print("You stand strong. You tell the attendants that you were actually a direct incarnation of their God. You are pleased that they have decided to sacrifice this fine young child to you. You have a request, however. You need them to sacrifice the child at a better location. You need them to sacrifice the child at the nearest town. The one with the portal (which you can take home). The attendees seem perflexed. What difference does it make where the child is sacrificed? You assure them that if we can move the sacrifice to the town, then they will each get a wish of their choosing. The idiots actually believe it! You lead a march toward the town with a posse of 20 behind you. Complete with a small child tied to a cross. What is your game plan? How are you going to save yourself and this kid? You arrive in the town and convince the crowd that they need not do all the work of making a large fire and having to lift up the child and wait for him to burn.. then you've got to deal with the smell. Anyway- you need not do this- I will just take the sacrifice with me and the people agree. You go into the house with the portal and jump inside and wind up in the depths of hell. This was not the right portal. You burn for eternity in hell. Dang. You were so close. You are dead. ")
         dead()
 
 
