@@ -122,7 +122,10 @@ def speech():
         print("")
         print("You begin by addressing the crowd and telling them how sacred life it. How they are acting barbarically and how there is no possible way that the good Lord above would approve of their sacrifices. You hear a quick scuffling off to your right and you see an archer crouched down with his bow drawn back. Unfortunately you see him too late and the archer releases the arrow and goes through the center of your skull. You have died. Never insult another person's God. ")
         dead()
-
+    if speechChoice == "trick":
+        print("")
+        print("You stand strong. You tell the attendants that you were actually a direct incarnation of their God. You are pleased that they have decided to sacrifice this fine young child to you. You have a request, however. You need them to sacrifice the child at a better location. You need them to sacrifice the child at the nearest town. The one with the portal (which you can take home). The attendees seem perflexed. What difference does it make where the child is sacrificed? You assure them that if we can move the sacrifice to the town, then they will each get a wish of their choosing. The idiots actually believe it! You lead a march toward the town with a posse of 20 behind you. Complete with a small child tied to a cross. What is your game plan? How are you going to save yourself and this kid? You arrive in the town and convince the crowd that they need not do all the work of making a large fire and having to life up the child and wait for him to burn.. then you've got to deal with the smell. Anyway- you need not do this- I will just take the sacrifice with me and the people agree. You go into the house with the portal and jump inside and wind up back home. Way to go. You did it. ")
+        dead()
 
 
 def dead():
